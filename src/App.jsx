@@ -1,6 +1,7 @@
 import LinkContainer from "./components/LinkContainer"
 import PokemonSearchForm from "./components/PokemonSearchForm"
 import SearchResults from "./components/SearchResults"
+import logoImage from "./assets/images/Pokesearch.png"
 import './index.css'
 import { useState } from "react"
 
@@ -40,7 +41,7 @@ function App() {
 
   return (
     <div className="pt-10">
-        <img src="src/assets/images/Pokesearch.png" className="w-auto h-[150px] block; mx-auto" />
+        <img src={logoImage} alt="PokeSearch" className="w-auto h-[150px] block mx-auto" />
         {/* <LinkContainer /> */}
 
         {/* Pass handleSearch into the form so it can call this when the user submits. */}
